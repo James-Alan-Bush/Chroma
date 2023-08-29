@@ -36,5 +36,16 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
++ (AppDelegate *)sharedAppDelegate
+{
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    if ([self.movieAppEventDelegate.movieFileOutput isRecording])
+        [self.movieAppEventDelegate toggleMovieRecording:nil];
+}
+
 
 @end

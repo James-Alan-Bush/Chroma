@@ -11,13 +11,14 @@
 		B935AB1F2A9E458600B66DF6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B935AB1E2A9E458600B66DF6 /* SceneDelegate.m */; };
 		B935AB222A9E458600B66DF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B935AB212A9E458600B66DF6 /* ViewController.m */; };
 		B935AB252A9E458600B66DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935AB232A9E458600B66DF6 /* Main.storyboard */; };
-		B935AB272A9E458700B66DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B935AB262A9E458700B66DF6 /* Assets.xcassets */; };
 		B935AB2A2A9E458700B66DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935AB282A9E458700B66DF6 /* LaunchScreen.storyboard */; };
 		B935AB2D2A9E458700B66DF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B935AB2C2A9E458700B66DF6 /* main.m */; };
+		B935AB362A9E4B2E00B66DF6 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = B935AB352A9E4B2E00B66DF6 /* PreviewView.m */; };
+		B935AB382A9E4BD400B66DF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B935AB372A9E4BD400B66DF6 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B935AB172A9E458600B66DF6 /* Chroma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chroma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B935AB172A9E458600B66DF6 /* ChromaBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromaBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B935AB1A2A9E458600B66DF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B935AB1B2A9E458600B66DF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B935AB1D2A9E458600B66DF6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -25,11 +26,13 @@
 		B935AB202A9E458600B66DF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B935AB212A9E458600B66DF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B935AB242A9E458600B66DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B935AB262A9E458700B66DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B935AB292A9E458700B66DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B935AB2B2A9E458700B66DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B935AB2C2A9E458700B66DF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B935AB332A9E463100B66DF6 /* Chroma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chroma.entitlements; sourceTree = "<group>"; };
+		B935AB342A9E4B2E00B66DF6 /* PreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		B935AB352A9E4B2E00B66DF6 /* PreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; wrapsLines = 0; };
+		B935AB372A9E4BD400B66DF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,7 @@
 		B935AB182A9E458600B66DF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B935AB172A9E458600B66DF6 /* Chroma.app */,
+				B935AB172A9E458600B66DF6 /* ChromaBeta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,8 +72,10 @@
 				B935AB1E2A9E458600B66DF6 /* SceneDelegate.m */,
 				B935AB202A9E458600B66DF6 /* ViewController.h */,
 				B935AB212A9E458600B66DF6 /* ViewController.m */,
+				B935AB342A9E4B2E00B66DF6 /* PreviewView.h */,
+				B935AB352A9E4B2E00B66DF6 /* PreviewView.m */,
 				B935AB232A9E458600B66DF6 /* Main.storyboard */,
-				B935AB262A9E458700B66DF6 /* Assets.xcassets */,
+				B935AB372A9E4BD400B66DF6 /* Images.xcassets */,
 				B935AB282A9E458700B66DF6 /* LaunchScreen.storyboard */,
 				B935AB2B2A9E458700B66DF6 /* Info.plist */,
 				B935AB2C2A9E458700B66DF6 /* main.m */,
@@ -81,9 +86,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B935AB162A9E458600B66DF6 /* Chroma */ = {
+		B935AB162A9E458600B66DF6 /* ChromaBeta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B935AB302A9E458700B66DF6 /* Build configuration list for PBXNativeTarget "Chroma" */;
+			buildConfigurationList = B935AB302A9E458700B66DF6 /* Build configuration list for PBXNativeTarget "ChromaBeta" */;
 			buildPhases = (
 				B935AB132A9E458600B66DF6 /* Sources */,
 				B935AB142A9E458600B66DF6 /* Frameworks */,
@@ -93,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = Chroma;
+			name = ChromaBeta;
 			productName = Chroma;
-			productReference = B935AB172A9E458600B66DF6 /* Chroma.app */;
+			productReference = B935AB172A9E458600B66DF6 /* ChromaBeta.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B935AB122A9E458600B66DF6 /* Build configuration list for PBXProject "Chroma" */;
+			buildConfigurationList = B935AB122A9E458600B66DF6 /* Build configuration list for PBXProject "ChromaBeta" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B935AB162A9E458600B66DF6 /* Chroma */,
+				B935AB162A9E458600B66DF6 /* ChromaBeta */,
 			);
 		};
 /* End PBXProject section */
@@ -136,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B935AB2A2A9E458700B66DF6 /* LaunchScreen.storyboard in Resources */,
-				B935AB272A9E458700B66DF6 /* Assets.xcassets in Resources */,
+				B935AB382A9E4BD400B66DF6 /* Images.xcassets in Resources */,
 				B935AB252A9E458600B66DF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B935AB222A9E458600B66DF6 /* ViewController.m in Sources */,
+				B935AB362A9E4B2E00B66DF6 /* PreviewView.m in Sources */,
 				B935AB1C2A9E458600B66DF6 /* AppDelegate.m in Sources */,
 				B935AB2D2A9E458700B66DF6 /* main.m in Sources */,
 				B935AB1F2A9E458600B66DF6 /* SceneDelegate.m in Sources */,
@@ -364,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B935AB122A9E458600B66DF6 /* Build configuration list for PBXProject "Chroma" */ = {
+		B935AB122A9E458600B66DF6 /* Build configuration list for PBXProject "ChromaBeta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B935AB2E2A9E458700B66DF6 /* Debug */,
@@ -373,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B935AB302A9E458700B66DF6 /* Build configuration list for PBXNativeTarget "Chroma" */ = {
+		B935AB302A9E458700B66DF6 /* Build configuration list for PBXNativeTarget "ChromaBeta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B935AB312A9E458700B66DF6 /* Debug */,
