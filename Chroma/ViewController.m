@@ -111,8 +111,6 @@ static const float kExposureDurationPower = 5.f; // Higher numbers will give the
     [self.coverView setAlpha:0.0];
 }
 
-
-
 - (IBAction)toggleDisplay:(UIButton *)sender {
     [self.coverView setHidden:FALSE];
     [self.coverView setAlpha:1.0];

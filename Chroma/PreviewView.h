@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM( long, CaptureSessionSetupResult ) {
+typedef NS_ENUM(u_long, CaptureSessionSetupResult) {
     CaptureSessionSetupResultSuccess,
     CaptureSessionSetupResultCameraNotAuthorized,
     CaptureSessionSetupResultFailed
@@ -22,11 +22,10 @@ typedef NS_ENUM( long, CaptureSessionSetupResult ) {
 
 @property (nonatomic) AVCaptureSession                   * capture_session;
 @property (nonatomic) AVCaptureDeviceRotationCoordinator * rotation_coordinator;
-
 @property (nonatomic) AVCaptureDevice                    * video_device;
-@property (nonatomic) AVCaptureDeviceInput               * video_input;
+@property (nullable, nonatomic) AVCaptureDeviceInput     * video_input;
 @property (nonatomic) AVCaptureDevice                    * audio_device;
-@property (nonatomic) AVCaptureDeviceInput               * audio_input;
+@property (nullable, nonatomic) AVCaptureDeviceInput               * audio_input;
 
 @end
 
