@@ -85,27 +85,6 @@
     ((AVCaptureVideoPreviewLayer *)self.layer).session = session;
 }
 
-- (const AVCaptureDeviceInput *)video_input {
-    __autoreleasing NSError * error;
-    const AVCaptureDeviceInput * di = [AVCaptureDeviceInput deviceInputWithDevice:self.video_device error:&error];
-    return di;
-}
-
-- (void)setVideo_input:(AVCaptureDeviceInput *)input {
-    self.video_input = input;
-}
-
-- (const AVCaptureDevice *)video_device
-{
-    const AVCaptureDevice * cd = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionUnspecified];
-    return cd;
-}
-
-- (void)setVideo_device:(AVCaptureDevice *)device
-{
-    self.video_device = device;
-}
-
 - (AVCaptureDeviceRotationCoordinator *)rotation_coordinator
 {
     AVCaptureDeviceRotationCoordinator * rc = [[AVCaptureDeviceRotationCoordinator alloc] initWithDevice:self.video_device previewLayer:(AVCaptureVideoPreviewLayer *)self.layer];
@@ -117,5 +96,62 @@
 {
     self.rotation_coordinator = rotation_coordinator;
 }
+
+- (AVCaptureDevice *)video_device
+{
+    AVCaptureDevice * cd = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionUnspecified];
+    return cd;
+}
+
+- (void)setVideo_device:(AVCaptureDevice *)device
+{
+    self.video_device = device;
+}
+
+- (nullable AVCaptureDeviceInput *)video_input {
+    @try {
+        __autoreleasing NSError * error;
+        AVCaptureDeviceInput * di = [AVCaptureDeviceInput deviceInputWithDevice:self.video_device error:&error];
+        return di;
+    } @catch (NSException * exception) {
+        printf("Exception configuring capture session:\n\t%s\n\t%s\n\t%lu",
+               [exception.name UTF8String],
+               [exception.reason UTF8String],
+               ((NSNumber *)[exception.userInfo valueForKey:@"Error Code"]).unsignedLongValue);
+        return NULL;
+    }
+}
+
+- (void)setVideo_input:(AVCaptureDeviceInput *)input {
+    self.video_input = input;
+}
+
+- (AVCaptureDevice *)audio_device {
+    AVCaptureDevice * ad = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio];
+    return ad;
+}
+
+- (void)setAudio_device:(AVCaptureDevice *)audio_device {
+    self.audio_device = audio_device;
+}
+
+- (nullable AVCaptureDeviceInput *)audio_input {
+    @try {
+        __autoreleasing NSError * error;
+        AVCaptureDeviceInput *ai = [AVCaptureDeviceInput deviceInputWithDevice:self.audio_device error:&error];
+        return ai;
+    } @catch (NSException * exception) {
+        printf("Exception configuring capture session:\n\t%s\n\t%s\n\t%lu",
+               [exception.name UTF8String],
+               [exception.reason UTF8String],
+               ((NSNumber *)[exception.userInfo valueForKey:@"Error Code"]).unsignedLongValue);
+        return NULL;
+    }
+}
+
+- (void)setAudio_input:(AVCaptureDeviceInput *)audio_input {
+    self.audio_input = audio_input;
+}
+
 
 @end
